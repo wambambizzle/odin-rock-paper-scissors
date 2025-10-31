@@ -13,5 +13,11 @@ function getComputerChoice() {
   }
 }
 
+function getHumanChoice() {
+  return prompt("rock paper scissors.. shoot: ");
+}
+
 const computerRoll = getComputerChoice();
-// console.log(`### roll: ${computerRoll}`);
+const humanRoll = getHumanChoice();
+
+// console.log(`### human roll: ${humanRoll}`);
