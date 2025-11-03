@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
   const randomRoll = Math.floor(Math.random() * 100);
 
@@ -20,4 +23,5 @@ function getHumanChoice() {
 const computerRoll = getComputerChoice();
 const humanRoll = getHumanChoice();
 
+// console.log(`### comp roll: ${computerRoll}`);
 // console.log(`### human roll: ${humanRoll}`);
