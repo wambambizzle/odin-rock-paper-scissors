@@ -21,39 +21,40 @@ function playRound(humanChoice, computerChoice) {
   let adjustedChoice = humanChoice.toLowerCase();
   console.log(`Your choice: ${adjustedChoice}`);
 
+  const results = document.querySelector(".results");
+
   if (adjustedChoice == computerChoice) {
-    console.log("It's a tie!");
+    results.textContent = "It's a tie!";
     return null;
   }
 
   if (adjustedChoice == "rock" && computerChoice == "scissors") {
-    console.log("You win! Rock beats Scissors");
+    results.textContent = "You win! Rock beats Scissors";
     return true;
   }
 
   if (adjustedChoice == "rock" && computerChoice == "paper") {
-    console.log("You lose! Paper beats Rock");
+    results.textContent = "You lose! Paper beats Rock";
     return false;
   }
 
   if (adjustedChoice == "paper" && computerChoice == "rock") {
-    console.log("You win! Paper beats Rock");
+    results.textContent = "You win! Paper beats Rock";
     return true;
   }
 
   if (adjustedChoice == "paper" && computerChoice == "scissors") {
-    // computerScore += 1;
-    console.log("You lose! Scissors beats Paper");
+    results.textContent = "You lose! Scissors beats Paper";
     return false;
   }
 
   if (adjustedChoice == "scissors" && computerChoice == "paper") {
-    console.log("You win! Scissors beats Paper");
+    results.textContent = "You win! Scissors beats Paper";
     return true;
   }
 
   if (adjustedChoice == "scissors" && computerChoice == "rock") {
-    console.log("You lose! Rock beats Scissors");
+    results.textContent = "You lose! Rock beats Scissors";
     return false;
   }
 }
